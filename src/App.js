@@ -1,18 +1,16 @@
 
 import './App.css';
+import Footer from './components/footer.js'
+import Header from './components/header.js'
+import Aboutme from './components/aboutme.js'
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src="images/meSmall.jpg" />header
-      </header>
-      <main>
-        main area
-      </main>
-      <footer>
-        footer
-      </footer>
+      <Header />
+      <Aboutme />
+      <Footer />
     </div>
   );
 }

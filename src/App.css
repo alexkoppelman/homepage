@@ -1,3 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
 .App {
+  text-align: center;
+}
+/* OVERALL PAGE STUFF */
+html{
+  height:100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(31, 31, 31);
+  font-weight: 500;
+  height: 100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+/* HEADER STUFF */
+.pageheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:10px;
+  vertical-align: center;  
+}
+.headerpicture {
+  width: 50px;
+  border-radius: 5px;
+  margin: 3px;
+}
+.headername {
+  font-size: large;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+/* MAIN PAGE AREA STUFF */
+.pagemain {
+  flex: 1 0 auto;
+  height:max-content;
+}
+
+/* FOOTER STUFF */
+.pagefooter {
+  margin: 10px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.footertext {
+  font-size: x-small;
   text-align: center;
 }
