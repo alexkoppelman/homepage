@@ -40,10 +40,22 @@ body {
 
 /* MAIN PAGE AREA STUFF */
 .pagemain {
-  flex: 1 0 auto;
+  flex: 1 1 0 auto;
   height:max-content;
 }
 
+
+/* LINKS STUFF */
+.links{
+  margin: 10px;
+  height: 100px;
+  flex-shrink: 1;
+}
+
+.linkstext {
+  font-size: small;
+  text-align: center;
+}
 /* FOOTER STUFF */
 .pagefooter {
   margin: 10px;
