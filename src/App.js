@@ -10,11 +10,11 @@ function App() {
     
     <div className="App">
       <Header />
-      {/* the about me section should be hidden and shown only when hoovered? */}
+      {/* The about me section should be hidden and shown only when hoovered? */}
       <Aboutme />
-      {/* the Links area*/}
+      {/* The Links area*/}
       <Links />
-      {/* */}
+      {/* Footer */}
       <Footer />
     </div>
   );
