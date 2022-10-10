@@ -9,6 +9,7 @@ export default function Links() {
             <li>GitHub</li>
             <li>LinkedIn</li>
             <li>Twitter</li>
+            <li>BattleDolls</li>
         </ul>
 
 

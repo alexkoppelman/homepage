@@ -9,6 +9,7 @@ function App() {
   return (
     
     <div className="App">
+      {/* The Headooooor */}
       <Header />
       {/* The about me section should be hidden and shown only when hoovered? */}
       <Aboutme />
