@@ -19,6 +19,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* HEADER STUFF */
+b {
+  font-weight: 900;
+}
+
+a {
+  color: rgb(2, 2, 2);
+  font-weight: 700;
+}
+
+
 /* HEADER STUFF */
 .pageheader {
   display: flex;
@@ -39,11 +51,15 @@ body {
 }
 
 /* MAIN PAGE AREA STUFF */
-.pagemain {
+.aboutme {
   flex: 1 1 0 auto;
   height:max-content;
 }
 
+.skills {
+  flex: 1 1 0 auto;
+  height:max-content;
+}
 
 /* LINKS STUFF */
 .links{

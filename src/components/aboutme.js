@@ -1,7 +1,7 @@
 export default function Aboutme() {
  return (
     <main>
-        <div className="pagemain">
+        <div className="aboutme">
           <p>
             <b>Introduction</b>
           </p>
@@ -13,15 +13,7 @@ export default function Aboutme() {
             Although this is all true, I have quite a broad interest in several IT Related topics. Since years ago I made my hobby my job. 
             I spend quite some non-work time on projects that I'm interested in to either learn new things or simply because I can. 
             </p>
-          <p>
-            <b>Skills</b>
-          </p>
-          <p>
-            <b>I work with: </b>Microsoft Sharepoint 2007/2013/Online – Microsoft SQL – Microsoft Excel – Microsoft PowerBi – Splunk – Microsoft DevOps - 
-            <b>I play with: </b>MySQL – PHP – Javascript – Python – Apache/Lighttpd – Node-Red – C++(Arduino) – MQTT - 
-            <b>Working on improving:</b> React – Web3 – MongoDB – 
-            <b>Languages: </b>English – Dutch – Spanish – Catalan - German - PHP - Python - Javascript - 
-          </p> 
+         
         </div>
       </main>
 )

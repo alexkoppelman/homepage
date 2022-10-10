@@ -4,6 +4,7 @@ import Footer from './components/footer.js'
 import Header from './components/header.js'
 import Aboutme from './components/aboutme.js'
 import Links from './components/links.js';
+import Skills from './components/skills.js';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Header />
       {/* The about me section should be hidden and shown only when hoovered? */}
       <Aboutme />
-      {/* The Links area*/}
+      {/* The Skills area*/}
+      <Skills />
+      { /* The Links area*/}
       <Links />
       {/* Footer */}
       <Footer />

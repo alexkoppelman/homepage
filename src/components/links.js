@@ -4,12 +4,12 @@ export default function Links() {
        <div className="links">
        <span className="linkstext">
         <ul>
-            <li>Minecraft Server</li>
-            <li>Viletans</li>
-            <li>GitHub</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-            <li>BattleDolls</li>
+            <li><a href="nostremon/index.php" target="_blank">Minecraft Server</a></li>
+            <li><a href="viletans/login.php" target="_blank">Viletans</a></li>
+            <li><a href="https://github.com/alexkoppelman" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alexanderkoppelman/ " target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">BattleDolls</a></li>
         </ul>
 
 
