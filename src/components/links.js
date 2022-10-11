@@ -1,7 +1,12 @@
 export default function Links() {
+    
+    
     return (
        
        <div className="links">
+       <p>
+            <b>Links</b>
+          </p>       
        <span className="linkstext">
         <dl>
             <dt><a href="battledolls/index.js" target="_blank"rel="noreferrer">BattleDolls</a></dt>

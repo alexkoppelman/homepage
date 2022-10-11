@@ -51,14 +51,32 @@ a {
 }
 
 /* MAIN PAGE AREA STUFF */
+
+.mainpage {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  -ms-flex-align: center;
+  flex-flow: row;
+  max-width: 100%;
+}
+
 .aboutme {
   flex: 1 1 0 auto;
   height:max-content;
+  max-width: 400px;
 }
 
 .skills {
   flex: 1 1 0 auto;
   height:max-content;
+  max-width: 400px
+}
+
+.projects {
+  flex: 1 1 0 auto;
+  height:max-content;
+  max-width: 400px
 }
 
 /* LINKS STUFF */
@@ -66,6 +84,7 @@ a {
   margin: 10px;
   height: 100px;
   flex-shrink: 1;
+  max-width: 400px
 }
 
 .linkstext {
