@@ -30,6 +30,10 @@ a {
   font-weight: 700;
 }
 
+p {
+  font-weight: 500;
+}
+
 
 /* HEADER STUFF */
 .pageheader {
@@ -65,18 +69,26 @@ a {
   flex: 1 1 0 auto;
   height:max-content;
   max-width: 400px;
+  text-align: left;
+  padding: 20px
 }
 
 .skills {
   flex: 1 1 0 auto;
   height:max-content;
-  max-width: 400px
+  max-width: 400px;
+  text-align: center;
+}
+.skilltext {
+  font-size: x-small;
+  vertical-align: middle;
 }
 
 .projects {
   flex: 1 1 0 auto;
   height:max-content;
-  max-width: 400px
+  max-width: 400px;
+  padding: 20px
 }
 
 /* LINKS STUFF */
@@ -84,12 +96,18 @@ a {
   margin: 10px;
   height: 100px;
   flex-shrink: 1;
-  max-width: 400px
+  max-width: 400px;
+  padding: 20px
 }
 
 .linkstext {
   font-size: small;
-  text-align: center;
+  text-align: left;
+}
+
+.w3-container{
+  height: 20px;
+  margin: 3px;
 }
 /* FOOTER STUFF */
 .pagefooter {

@@ -1,6 +1,40 @@
+import React from "react";
+
 export default function Links() {
+
+const restEndpoint = "https://alexkoppelman.es:1880/links";
+
+const callRestApi = async () => {
+    const response = await fetch(restEndpoint);
     
+    const jsonResponse = await response.json();
+    console.log(jsonResponse);
+    const arrayOfLists = jsonResponse.records.map(
+      record => <li key={record.idlinks}><b>{record.URL}</b>{record}</li>
+    )
+    console.log(arrayOfLists);
+    return arrayOfLists;
     
+};
+
+
+function RenderResult() {
+    const [apiResponse, setApiResponse] = React.useState(["loading"]);
+    //console.log(apiResponse);
+    React.useEffect(() => {
+        callRestApi().then(
+            result => setApiResponse(result));
+    },[]);
+  
+    return(
+        <div>
+           <ul>{apiResponse}</ul>
+        </div>
+    );
+  };
+
+
+  
     return (
        
        <div className="links">
@@ -8,15 +42,8 @@ export default function Links() {
             <b>Links</b>
           </p>       
        <span className="linkstext">
-        <dl>
-            <dt><a href="battledolls/index.js" target="_blank"rel="noreferrer">BattleDolls</a></dt>
-                <dd>React WEB3 Card Game</dd>
-            <dt><a href="nostremon/index.php" target="_blank" rel="noreferrer">Minecraft Server</a></dt>
-            <dt><a href="viletans/login.php" target="_blank" rel="noreferrer">Viletans</a></dt>
-            <dt><a href="https://github.com/alexkoppelman" target="_blank" rel="noreferrer">GitHub</a></dt>
-            <dt><a href="https://www.linkedin.com/in/alexanderkoppelman/ " target="_blank" rel="noreferrer">LinkedIn</a></dt>
-            <dt><a href="twitter.com/alexkbcn/" target="_blank" rel="noreferrer">Twitter</a></dt>
-        </dl>
+        
+       <RenderResult />
        </span>
        </div>
        

@@ -1,5 +1,6 @@
 
 import './App.css';
+import'./w3.css';
 import Footer from './components/footer.js';
 import Header from './components/header.js';
 import Aboutme from './components/aboutme.js';
@@ -9,19 +10,13 @@ import Projects from './components/projects';
 import React from "react";
 
 
-
 function App() {
-  
-  
-  
   const [skillsArray, setSkillsArray] = React.useState();
-  // Function to collect data
   const getApiData = async () => {
   const response = await fetch(
     "https://alexkoppelman.es:1880/skills"
   ).then((response) => response.json());
-  
-  setSkillsArray(response);
+   setSkillsArray(response);
 };
 
 React.useEffect(() => {
@@ -30,7 +25,7 @@ React.useEffect(() => {
 
   const skilllist = skillsArray && 
     skillsArray.map((item => {
-      console.log(item);
+      //console.log(item);
       return(      
       
       <Skills 
@@ -38,18 +33,11 @@ React.useEffect(() => {
           name={item.SkillName}
           rating={item.SkillRating}
       />
-      )
-  })
-    )
+      )}))
  
   
   return (
-
     <div className="App">
-
-    
-        
-  
       {/* The Headooooor */}
       <Header />
       {/* The about me section should be hidden and shown only when hoovered? */}
@@ -57,8 +45,9 @@ React.useEffect(() => {
       <Aboutme />
       {/* The Skills area*/}
       <section className='skillsSection'>
-      {console.log(skilllist)}
+      <div className="aboutme">  <p>Skills:</p>
       {skilllist}
+      </div>
       </section>
       { /* The Projects area*/}
       <Projects />
