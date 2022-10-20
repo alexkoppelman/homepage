@@ -8,11 +8,17 @@ const callRestApi = async () => {
     const response = await fetch(restEndpoint);
     
     const jsonResponse = await response.json();
-    console.log(jsonResponse);
-    const arrayOfLists = jsonResponse.records.map(
-      record => <li key={record.idlinks}><b>{record.URL}</b>{record}</li>
+    //console.log(jsonResponse);
+    const arrayOfLists = jsonResponse.map(
+      record => 
+      <li key={record.idlinks}>
+        <p>
+          <b><a href={record.URL} alt={record.name} target="_blank" rel="noreferrer">{record.name}</a></b><br/>
+          {record.description}
+        </p>
+      </li>
     )
-    console.log(arrayOfLists);
+    //console.log(arrayOfLists);
     return arrayOfLists;
     
 };
@@ -39,11 +45,10 @@ function RenderResult() {
        
        <div className="links">
        <p>
-            <b>Links</b>
-          </p>       
+        <b className="sectionTitle">Links</b>
+       </p>       
        <span className="linkstext">
-        
-       <RenderResult />
+        <RenderResult />
        </span>
        </div>
        

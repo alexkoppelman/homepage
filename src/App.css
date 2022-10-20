@@ -1,9 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap
 }
 /* OVERALL PAGE STUFF */
 html{
@@ -16,22 +19,23 @@ body {
   font-weight: 700;
   height: 100%;
   margin:0;
-  display: flex;
-  flex-direction: column;
+  
+  font-size: x-small;
 }
 
 /* HEADER STUFF */
 b {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 a {
   color: rgb(2, 2, 2);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 p {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -59,16 +63,18 @@ p {
 .mainpage {
   display: flex;
   flex-direction:row;
-  flex-wrap: nowrap;
-  -ms-flex-align: center;
   flex-flow: row;
   max-width: 100%;
+}
+
+.sectionTitle{
+  font-family: 'Roboto','Montserrat', sans-serif;
+  font-size: larger;
 }
 
 .aboutme {
   flex: 1 1 0 auto;
   height:max-content;
-  max-width: 400px;
   text-align: left;
   padding: 20px
 }
@@ -76,12 +82,19 @@ p {
 .skills {
   flex: 1 1 0 auto;
   height:max-content;
-  max-width: 400px;
+  
   text-align: center;
+  display: block;
 }
 .skilltext {
   font-size: x-small;
   vertical-align: middle;
+  display: inline-block;
+}
+
+.w3-container w3-light-grey w3-round {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .projects {
@@ -89,6 +102,11 @@ p {
   height:max-content;
   max-width: 400px;
   padding: 20px
+}
+
+.projectLink {
+  font-size: x-small;
+  font-weight: lighter;
 }
 
 /* LINKS STUFF */
@@ -105,19 +123,39 @@ p {
   text-align: left;
 }
 
+.projectCat {
+  font-size: x-small;
+  text-align: left;
+}
+
+.projectDescr {
+  font-size: small;
+  text-align: left;
+}
+
+.projectStatus {
+  font-size: x-small;
+  text-align: right;
+}
+
 .w3-container{
   height: 20px;
   margin: 3px;
 }
 /* FOOTER STUFF */
 .pagefooter {
-  margin: 10px;
+  margin: 0px;
   height: 50px;
   flex-shrink: 0;
+  width:100%;
   position:fixed;
   bottom:0;
+  background-color: white;
+  opacity: 0.9;
+  
 }
 .footertext {
   font-size: x-small;
   text-align: center;
+  vertical-align: middle;
 }

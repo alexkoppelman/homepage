@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:opsz,wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    color: rgb(2, 2, 2);
+    height: 100%;
+    font-size: small;
+  }
+
+.App {  
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    gap: 10px 10px;
+    margin:10px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header header"
+      "left projects right"
+      "footer footer footer";
+}
+  
+  
+  a {
+    color: rgb(2, 2, 2);
+    font-weight: 600;
+  }
+  
+  p {
+    font-weight: 600;
+    font-family: 'Dosis', 'Montserrat', sans-serif;
+  }
+
+  .header { grid-area: header; }
+  
+  .headerpicture {
+    width: 50px;
+    border-radius: 5px;
+    margin: 3px;
+  }
+ 
+  .headername {
+    font-family: 'Dosis', 'Montserrat', sans-serif;
+  }
+
+  .sectionTitle{
+    font-family: 'Dosis','Montserrat', sans-serif;
+    font-size: larger;
+  }
+
+  .left {  display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 0 / 1 ;
+    gap: 10px 5px;
+    grid-template-areas:
+      "about"
+      "skills";
+    grid-area: left;
+    align-content:flex-start ;
+
+    
+  }
+  
+  .about { 
+    grid-area: about; 
+    grid-auto-flow: row dense; 
+    align-self: flex-start; 
+    gap: 5px 5px;
+    background-color: aliceblue;
+    
+    border-radius: 5px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.aboutme {
+  font-family: 'Montserrat', sans-serif;
+}
+  
+  .skills { 
+    grid-area: skills; 
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 5px;
+    gap: 0rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    }
+  
+  .skilltext {
+    font-size: x-small;
+    vertical-align: middle;
+    }
+
+.skillbar {
+  background-color: black;
+  margin:0px;
+  display: inline-block;
+}
+
+  .w3-container w3-light-grey w3-round  {
+    vertical-align: middle;
+    display: inline-block;
+    border-color: black;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid;
+    border-radius: 3px;
+  }
+
+  .projects { 
+    grid-area: projects; 
+    grid-auto-flow: row dense; 
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0px;
+    align-content: start; 
+    align-self: flex-start;
+    vertical-align: top;
+  }
+  
+  .Card {
+    border-color: rgb(82, 82, 82);
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+
+}
+
+.projImage {
+    max-width: 400px;
+    max-height: 400px;
+    }
+
+.projectFotos {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto1 {
+  object-fit: cover;
+  width: 400px;
+  height: 230px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: darkgrey;
+}
+
+.foto2 {
+    object-fit: cover;
+    width: 400px;
+    height: 230px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: darkgrey;
+}
+
+.projectStatus {
+    text-align: right;
+    font-size: x-small;
+}
+
+.projectCat {
+    font-size: x-small;
+}
+
+
+  .right {  display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row dense; 
+    grid-template-areas:
+      "links "
+      "topright"
+      "topright";
+    grid-area: right;
+    align-content: start; 
+    align-self: flex-start;
+    vertical-align: top;
+  }
+  
+  .links { 
+    grid-area: links; 
+    grid-auto-flow: row dense; 
+    align-self: flex-start;
+    background-color: aliceblue;
+    gap: 5px 5px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0px;
+    vertical-align: top;
+}
+  
+  .topright { 
+    grid-area: topright; 
+    grid-auto-flow: row dense; 
+}
+  
+  .footer { grid-area: footer; 
+    background-color: aliceblue;
+    opacity: 80%;
+    border-radius: 5px;
+    padding: 10px;}

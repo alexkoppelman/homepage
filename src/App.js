@@ -1,5 +1,5 @@
 
-import './App.css';
+import './newApp.css';
 import'./w3.css';
 import Footer from './components/footer.js';
 import Header from './components/header.js';
@@ -37,26 +37,23 @@ React.useEffect(() => {
  
   
   return (
-    <div className="App">
-      {/* The Headooooor */}
-      <Header />
-      {/* The about me section should be hidden and shown only when hoovered? */}
-      <div className="mainpage">
-      <Aboutme />
-      {/* The Skills area*/}
-      <section className='skillsSection'>
-      <div className="aboutme">  <p>Skills:</p>
+<div className="App">
+  <div className="header"><Header /></div>
+  <div className="footer"><Footer /></div>
+  <div className="left">
+    <div className="about"><Aboutme /></div>
+    <div className="skills">
       {skilllist}
-      </div>
-      </section>
-      { /* The Projects area*/}
-      <Projects />
-      { /* The Links area*/}
-      <Links />
-      </div>
-      {/* Footer */}
-      <Footer />
     </div>
+  </div>
+  <div className="projects"><Projects /></div>
+  <div className="right">
+    <div className="links"><Links /></div>
+    <div className='topright'></div>
+  </div>
+</div> 
+
+
   );
 }
 

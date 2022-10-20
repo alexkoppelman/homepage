@@ -13,19 +13,13 @@ export default function Skills(props) {
     percentage = "100%";
   }
 
-  /* const style = {
-    width: `${percentage}`
-  }
-   */
   const style = {
     width: percentage
   }
 
   return (
     <div className="skills" key={props.idskills} >
-    {/* <img src={require(`../images/${props.rating.toString()}.png`)} alt="rating" width="70px" /> */}
-    {/*<div className="w3-light-grey w3-round">*/}
-      <div className="w3-container w3-dark-grey w3-round" style={style} >
+      <div className="w3-container w3-dark-grey w3-round " style={style} >
       <span className="skilltext">{props.name}</span>
       </div>
     </div>
