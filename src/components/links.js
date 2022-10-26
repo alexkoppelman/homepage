@@ -39,18 +39,27 @@ function RenderResult() {
     );
   };
 
-
+  const [open, setOpen] = React.useState(false);
+ 
+  const toggle = () => {
+      setOpen(!open);
+    };
   
     return (
-       
+      <main>
+        <div className="contentblock">
+      <div className="LinksHeader"><button type="button" className="collapsible" onClick={toggle}>Links</button></div>
+         
+      {open && (
        <div className="links">
-       <p>
-        <b className="sectionTitle">Links</b>
-       </p>       
-       <span className="linkstext">
         <RenderResult />
-       </span>
+       <br/>
        </div>
        
+       )}
+           
+           </div>    
+        
+       </main>
    )
    }

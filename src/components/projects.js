@@ -18,7 +18,7 @@ const callRestApi = async () => {
     //console.log(jsonResponse);
     const arrayOfLists = jsonResponse.map(
       record => 
-      <div className="Card" id={record.idnew_table}>
+      <div className="Card" key={record.idnew_table}>
         <p>
            {record.ProjectURL? <span className="projectLink"><a href={record.ProjectURL}> {record.ProjectName}</a></span> :<span>{record.ProjectName}</span> }
           </p>
@@ -60,7 +60,7 @@ function RenderResult() {
   
     return (
        
-       <div className="projects">
+       <div className="contentblock">
         <p>
             <b className="sectionTitle">Projects</b>
         </p>       

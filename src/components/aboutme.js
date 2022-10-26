@@ -1,8 +1,7 @@
 export default function Aboutme() {
  return (
     <main>
-        <div className="aboutme">
-          
+        <div className="contentblock">
           <p>
            I'm Alex Koppelman and work as a Data Engineer. I am specialised in running projects in which the aim is to move data around, transform and clean it up and make it ready for analysis.
           </p>  

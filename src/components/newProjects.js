@@ -18,11 +18,14 @@ export default function Skills(props) {
   }
 
   return (
+    <main>
+      <div className="contentblock">
     <div className="skills" key={props.idskills} >
       <div className="w3-container w3-dark-grey w3-round " style={style} >
       <span className="skilltext">{props.name}</span>
       </div>
     </div>
-    
+    </div>
+    </main>
    )
    } 
