@@ -24,7 +24,7 @@ return (
   
     <div className="projects"><Projects /></div>
   
-  <div className="right">
+  <div className="rightColumn">
     <div className="links"><Links/></div>
     <div className='Referrals'><Referrals /></div>
   </div>

@@ -13,7 +13,7 @@ const callRestApi = async () => {
       record => 
       <li key={record.idlinks}>
         <p>
-          <b><a href={record.URL} alt={record.name} target="_blank" rel="noreferrer">{record.name}</a></b><br/>
+          <a href={record.URL} alt={record.name} target="_blank" rel="noreferrer">{record.name}</a><br/>
           {record.description}
         </p>
       </li>
@@ -48,7 +48,7 @@ function RenderResult() {
     return (
       <main>
         <div className="contentblock">
-      <div className="LinksHeader"><button type="button" className="collapsible" onClick={toggle}>Links</button></div>
+      <div className="LinksHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Links</span></button></div>
          
       {open && (
        <div className="links">

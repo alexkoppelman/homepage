@@ -61,12 +61,12 @@ function RenderResult() {
     return (
        
        <div className="contentblock">
-        <p>
-            <b className="sectionTitle">Projects</b>
-        </p>       
-        <span className="projectstext" id="projectImageLarge">
+        
+        <div className="collapsible"><span className="headertitle">Projects</span></div>
+        
+        <div className="projectstext" id="projectImageLarge">
             <RenderResult />
-        </span>
+        </div>
         
        </div>
        

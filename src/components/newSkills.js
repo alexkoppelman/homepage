@@ -12,7 +12,7 @@ const callRestApi = async () => {
   
   record => 
     <div className="skills" key={record.idskills} >
-    <div className="w3-container w3-dark-grey w3-round" style={{width:
+    <div className="w3-container w3-pale-green w3-round" style={{width:
    record.SkillRating === 1 ? "25%" 
    : record.SkillRating === 2  ? "50%" 
    : record.SkillRating === 3  ? "75%" 
@@ -52,7 +52,7 @@ const toggle = () => {
   return (
     <main>
     <div className="contentblock">
-    <div className="SkillsHeader"><button type="button" className="collapsible" onClick={toggle}>Skills</button></div>
+    <div className="SkillsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Skills</span></button></div>
            
     {open && (
     <div className="skills">
