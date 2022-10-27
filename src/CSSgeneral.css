@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+
+html{
+  height:100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  height: 100%;
+  margin:0;
+  font-size: x-small;
+}
+
+/* HEADER STUFF */
+b {
+  font-weight: bold;
+}
+
+a {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.collapsible {
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: 1px;
+  text-align: left;
+  outline: 1px;
+  font-size: 15px;
+  border-radius: 3px;
+  height:min-content;
+  align-content: start; 
+  align-self: flex-start;
+  vertical-align: top;
+}
+
+.headertitle{
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.contentblock {
+  border: 1px;
+  border-radius: 4px;
+  height:max-content;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+}
+
+.pageheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:2px;
+  vertical-align: center;  
+}
+.headerpicture {
+  width: 50px;
+  border-radius: 5px;
+  margin: 3px;
+}
+.headername {
+  font-size: large;
+  font-weight: bolder;
+  vertical-align: middle;
+  font-family: 'Dosis', 'Montserrat', sans-serif;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction:column;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.sectionTitle{
+  font-family: 'Roboto','Montserrat', sans-serif;
+  font-size: larger;
+}
+
+
+.aboutme {
+  height:max-content;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutmeText{
+  padding: 5px;
+}
+
+
+.skilltext {
+  font-size: x-small;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.skillbar {
+  margin:0px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.w3-container w3-light-grey w3-round {
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.Card {
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin:10px;
+ }
+
+ .projectLink {
+  font-size: large;
+  font-weight: light;
+}
+
+.projectCat {
+  font-size: x-small;
+  text-align: left;
+}
+
+.projectDescr {
+  font-size: small;
+  text-align: left;
+}
+
+.projectStatus {
+  font-size: x-small;
+  text-align: right;
+}
+
+.projImage {
+  max-width: 400px;
+  max-height: 400px;
+  }
+
+.projectFotos {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foto1 {
+  object-fit: cover;
+  width: 400px;
+  height: 230px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.foto2 {
+  object-fit: cover;
+  width: 400px;
+  height: 230px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.linkstext {
+  font-size: small;
+  text-align: left;
+}
+.w3-container{
+  height: min-content;
+  margin: 1px;
+}
+.footer { 
+  /* do nothing */
+}
+.footertext {
+  font-size: small;
+  text-align: right;
+}

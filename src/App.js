@@ -1,12 +1,14 @@
 
-import './Appcopy.css';
+import './CSSstructure.css';
+import './CSScolors.css';
+import './CSSgeneral.css';
 import'./w3.css';
 import Footer from './components/footer.js';
 import Header from './components/header.js';
 import Aboutme from './components/aboutme.js';
 import Links from './components/links.js';
 import Skills from './components/newSkills.js';
-import Projects from './components/projects';
+import Projects from './components/projects.js';
 import Referrals from './components/referrals';
 import React from "react";
 
