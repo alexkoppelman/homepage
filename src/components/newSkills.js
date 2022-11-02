@@ -12,7 +12,7 @@ const callRestApi = async () => {
   
   record => 
     <div className="skills" key={record.idskills} >
-    <div className="w3-container w3-pale-green w3-round" style={{width:
+    <div className="w3-container w3-blue-grey w3-round" style={{width:
    record.SkillRating === 1 ? "25%" 
    : record.SkillRating === 2  ? "50%" 
    : record.SkillRating === 3  ? "75%" 

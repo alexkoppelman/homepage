@@ -28,8 +28,6 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .collapsible {
   cursor: pointer;
   padding: 0px;
@@ -59,20 +57,28 @@ p {
   padding: 0px;
 }
 
+.App-header{
+  border-radius: 5px;
+  } 
+
 .pageheader {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:2px;
+  margin-top: 10px;
   vertical-align: center;  
+  border-radius: 5px;
 }
+
 .headerpicture {
   width: 50px;
   border-radius: 5px;
-  margin: 3px;
+  margin-right: 10px;
+  margin-top: 10px;  
+  margin-bottom: 10px;
 }
 .headername {
-  font-size: large;
+  font-size:xx-large;
   font-weight: bolder;
   vertical-align: middle;
   font-family: 'Dosis', 'Montserrat', sans-serif;
@@ -151,34 +157,33 @@ p {
   text-align: right;
 }
 
-.projImage {
+/* .projImage {
   max-width: 400px;
   max-height: 400px;
-  }
+  } */
 
 .projectFotos {
   width: 100%;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   -ms-flex-align: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap:wrap;
   align-items: center;
 }
 
 .foto1 {
   object-fit: cover;
-  width: 400px;
-  height: 230px;
+  max-width: 75%;
   border-radius: 5px;
-  border: 1px solid;
+  border: 2px solid;
+  margin-bottom: 20px;;
 }
 .foto2 {
   object-fit: cover;
-  width: 400px;
-  height: 230px;
+  max-width: 75%;
   border-radius: 5px;
-  border: 1px solid;
+  border: 2px solid;
+  border-collapse: collapse;
 }
 .linkstext {
   font-size: small;
@@ -190,8 +195,11 @@ p {
 }
 .footer { 
   /* do nothing */
+  opacity: 60%;
 }
 .footertext {
   font-size: small;
   text-align: right;
+  font-weight: 100;
+  font-family: 'Dosis', 'Montserrat', sans-serif;
 }

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+:root {
+  --mainbg:#D9DCD6;
+  --borders:#16425B;
+  --areabg: #81C3D7;
+  --boxbg:#3A7CA5 ;
+  --boxheader: #16425B;
+  --boxheaderHoover: #256b94;
+  --boxLight: #2F6690;
+  --shadow:#115277 ;
+  --fontClear: white;
+  --fontDark: #0E2430;
+}
+.testcolors{
+color: #2F6690;
+color: #3A7CA5;
+color: #D9DCD6;
+color: #16425B;
+color: #81C3D7;
+}
+body {
+  color: var(--fontClear);
+  background-color: var(--mainbg);;
+}
+
+a {
+  color: var(--fontClear);
+}
+
+.collapsible {
+  background-color: var(--boxheader);
+  border-color: var(--borders);
+  outline-color: var(--borders);
+  color: var(--fontClear);
+}
+
+.App-header{
+  background-color: var(--boxLight);
+}
+
+.headertitle{
+  color:var(--fontClear);
+}
+
+.active, .collapsible:hover {
+  background-color: var(--boxheaderHoover);
+}
+
+.contentblock {
+  background-color: var(--boxLight);;
+  border-color: var(--borders);
+  box-shadow: 3px 5px var(--shadow);
+}
+
+.aboutmeText{
+  color: var(--fontClear);
+}
+
+.skillbar {
+  background-color:var(--areabg);;
+  border-color: var(--borders);
+}
+
+.w3-container w3-light-grey w3-round {
+  border-color: var(--areabg);;
+  background-color: var(--boxheader);
+}
+
+.Card {
+  border-color:var(--borders);
+  background-color: var(--boxbg);
+  box-shadow: 2px 3px var(--shadow);
+ }
+
+.projectLink{
+  color: var(--fontClear);
+}
+
+.foto1 {
+  border-color:var(--borders);
+}
+
+.foto2 {
+  border-color: var(--borders);
+}
+
+.pagefooter {
+  background-color:var(--areabg);;
+}
+
+.active, .pagefooter:hover {
+  background-color: var(--boxheader);
+}

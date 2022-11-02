@@ -1,7 +1,7 @@
 
 import './css/structure.css';
-import './css/general.css';
-import './css/colors.css';
+import './CSSgeneralMob.css';
+import './CSScolors.css';
 
 import'./w3.css';
 import Footer from './components/footer.js';
@@ -18,40 +18,8 @@ function App() {
 
 return (
 <div className="App">
-<div className="header">
-<Header />
-</div>
-
-<div className="row">
-  <div className="col-3 col-newcolabout menu left">
-  <div className="about"><Aboutme /></div>
-    <div className='skills'><Skills/></div>
-    <div className="links"><Links/></div>
-  </div>
-
-  <div className="col-6 col-newcolprojects projects">
-  <Projects />
-  </div>
-
-  <div className="col-3 col-s-12 rightColumn">
-   
-    
-    <div className='Referrals'><Referrals /></div>
-   
-  </div>
-</div>
-
-<div className="footer">
-<Footer />
-</div>
-
-</div>
-
-
-
-/* <div className="App">
   
-
+  <div className="header"><Header /></div>
   <div className="left">
     <div className="about"><Aboutme /></div>
     <div className='skills'><Skills/></div>
@@ -66,7 +34,7 @@ return (
 
   <div className="footer"><Footer /></div>
   
-</div>  */
+</div> 
 
 
   );

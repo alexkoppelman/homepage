@@ -25,9 +25,9 @@ const callRestApi = async () => {
 
             <span className="projectCat">{record.ProjectCategory}</span>
             <p className="projectDescr">{record.ProjectDescription}</p>
-            <div className="projectFotos">
-              {record.ProjectImage1 == null ? '' : <span className="foto1"><img src= {'/images/' + record.ProjectImage1} className="foto1" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick}  /></span> }
-              {record.ProjectImage2 == null ? '' : <span className="foto2"><img src= {'/images/' + record.ProjectImage2} className="foto2" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick} /></span> }       
+            <div className="projectFotos" align="center">
+              {record.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage1} className="foto1" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick}  /></span> }
+              {record.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage2} className="foto2" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick} /></span> }       
             </div>
               {record.ProjectStatus === "Completed" ? '' : <p className="projectStatus">{record.ProjectStatus}</p>}
               
@@ -56,19 +56,26 @@ function RenderResult() {
       );
   };
 
+  const [open, setOpen] = React.useState(true);
+ 
+const toggle = () => {
+    setOpen(!open);
+  };
 
   
     return (
        
        <div className="contentblock">
         
-        <div className="collapsible"><span className="headertitle">Projects</span></div>
-        
+        <div className="ReferralsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Projects</span></button></div>
+        {open && (
         <div className="projectstext" id="projectImageLarge">
             <RenderResult />
         </div>
-        
-       </div>
+        )}
+           
+        </div>
+    
        
    )
 
