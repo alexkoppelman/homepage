@@ -23,17 +23,17 @@ return (
 </div>
 
 <div className="row">
-  <div className="col-3 col-newcolabout menu left">
+  <div className="col-3 col-s-3 col-newcolabout menu left">
   <div className="about"><Aboutme /></div>
     <div className='skills'><Skills/></div>
     <div className="links"><Links/></div>
   </div>
 
-  <div className="col-6 col-newcolprojects projects">
+  <div className="col-6 col-s-6 col-newcolprojects">
   <Projects />
   </div>
 
-  <div className="col-3 col-s-12 rightColumn">
+  <div className="col-3 col-s-3 rightColumn">
    
     
     <div className='Referrals'><Referrals /></div>

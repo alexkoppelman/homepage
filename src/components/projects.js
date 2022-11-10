@@ -67,7 +67,7 @@ const toggle = () => {
        
        <div className="contentblock">
         
-        <div className="ReferralsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Projects</span></button></div>
+        <div className="ReferralsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Projects & Ideas</span></button></div>
         {open && (
         <div className="projectstext" id="projectImageLarge">
             <RenderResult />

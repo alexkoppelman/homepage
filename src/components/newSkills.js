@@ -52,7 +52,7 @@ const toggle = () => {
   return (
     <main>
     <div className="contentblock">
-    <div className="SkillsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Skills</span></button></div>
+    <div className="SkillsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Toolbelt</span></button></div>
            
     {open && (
     <div className="skills">

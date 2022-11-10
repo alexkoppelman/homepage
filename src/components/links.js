@@ -39,7 +39,7 @@ function RenderResult() {
     );
   };
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
  
   const toggle = () => {
       setOpen(!open);
