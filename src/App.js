@@ -47,28 +47,6 @@ return (
 
 </div>
 
-
-
-/* <div className="App">
-  
-
-  <div className="left">
-    <div className="about"><Aboutme /></div>
-    <div className='skills'><Skills/></div>
-    </div>
-  
-    <div className="projects"><Projects /></div>
-  
-  <div className="rightColumn">
-    <div className="links"><Links/></div>
-    <div className='Referrals'><Referrals /></div>
-  </div>
-
-  <div className="footer"><Footer /></div>
-  
-</div>  */
-
-
   );
 }
 
