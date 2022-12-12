@@ -92,6 +92,43 @@ p {
   display: inline-block;
 }
 
+.newSkillList {
+  list-style-type: none;
+}
+
+.newSkillList ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.newSkillList li {
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.arduino {background: #ff8e5d;}
+.react {background: #5b89f6;}
+.php {background: #e4ce3d;}
+.pihole {background: rgb(214, 123, 241);}
+.pinhole {background: #e18399;}
+.solidity {background: #02d083;}
+.nodejs {background: rgb(106, 106, 221);}
+.javascript {background: rgb(67, 67, 136);}
+.mysql {background: rgb(214, 123, 241);}
+.mqtt {background: rgb(67, 67, 136);}
+.html {background: #ff8e5d;}
+.css {background: #02d083;}
+
 .w3-container w3-light-grey w3-round {
   vertical-align: middle;
   display: inline-block;

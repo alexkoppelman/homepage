@@ -25,8 +25,8 @@ return (
 <div className="row">
   <div className="col-3 col-s-3 col-newcolabout menu left">
   <div className="about"><Aboutme /></div>
-    <div className='skills'><Skills/></div>
-    <div className="links"><Links/></div>
+    {/* <div className='skills'><Skills/></div> */}
+    {/* <div className="links"><Links/></div> */}
   </div>
 
   <div className="col-6 col-s-6 col-newcolprojects">

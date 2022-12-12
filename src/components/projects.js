@@ -1,34 +1,11 @@
 import React from "react";
-import parse from 'html-react-parser'
+
 
 export default function Projects() {
 
   const imageClick = event => {
     console.log(event.target.src);
 };
-
-// get all skills in array
-const [skillArray, setSkillArray] = React.useState([])
-const skillsEndpoint = "https://alexkoppelman.es:1880/skills"
-const [subSkills, setSubSkills] = React.useState([])
-// fetch(skillsEndpoint)
-//        .then(Sresponse => Sresponse.json())
-//        .then(Sdata => setSkillArray(Sdata))
-       
-
-const getSkillsApiData = async () => {
-  const Sresponse = await fetch(
-    skillsEndpoint
-  ).then((Sresponse) => Sresponse.json());
-
-  // update the state
-  setSkillArray(Sresponse);
-};
-
-React.useEffect(() => {
-  getSkillsApiData();
-}, []);
-
 
 
 // handle project data coming in
@@ -46,11 +23,16 @@ const callRestApi = async () => {
       record => 
       
       <div className="Card" key={record.idnew_table}>
-        <p>
-         
-        {parse(record.skillName)}
-        
-        </p>
+        <div className="skillsList">
+          <ul>
+            {record.ProjectSkill1 ? <li className={record.ProjectSkill1} ><i className = {record.ProjectSkill1Icon} />{record.ProjectSkill1}</li> : null}
+            {record.ProjectSkill2 ? <li className={record.ProjectSkill2} ><i className = {record.ProjectSkill2Icon} />{record.ProjectSkill2}</li> : null}
+            {record.ProjectSkill3 ? <li className={record.ProjectSkill3} ><i className = {record.ProjectSkill3Icon} />{record.ProjectSkill3}</li> : null}
+            {record.ProjectSkill4 ? <li className={record.ProjectSkill4} ><i className = {record.ProjectSkill4Icon} />{record.ProjectSkill4}</li> : null}
+            {record.ProjectSkill5 ? <li className={record.ProjectSkill5} ><i className = {record.ProjectSkill5Icon} />{record.ProjectSkill5}</li> : null}
+            {record.ProjectSkill6 ? <li className={record.ProjectSkill6} ><i className = {record.ProjectSkill6Icon} />{record.ProjectSkill6}</li> : null}
+          </ul>
+        </div>
         <p>
            {record.ProjectURL? <span className="projectLink"><a href={record.ProjectURL}> {record.ProjectName}</a></span> :<span>{record.ProjectName}</span> }
           </p>

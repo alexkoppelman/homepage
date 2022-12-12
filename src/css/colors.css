@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
 
 :root {
-  --mainbg:#D9DCD6;
+  --mainbg:rgb(248, 248, 248);
+  /* --borders:#16425B; */
   --borders:#16425B;
   --areabg: #81C3D7;
   --boxbg:#3A7CA5 ;
@@ -37,7 +38,8 @@ a {
 }
 
 .App-header{
-  background-color: var(--boxLight);
+  /* background-color: var(--boxLight); */
+  color:var(--fontDark);
 }
 
 .headertitle{
