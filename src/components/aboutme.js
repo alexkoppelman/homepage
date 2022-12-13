@@ -3,6 +3,8 @@ export default function Aboutme() {
     <main>
         <div className="Card">
           <div className="aboutmeText">
+            <span className="project--title">&lt;about/&gt;</span>
+            <span className="projectDescr">
           <p>
            I'm Alex Koppelman and work as a Data Engineer specialised in running projects in which the aim is to move data around, transform and clean it up and make it ready for analysis.
           </p><br/>
@@ -15,6 +17,7 @@ export default function Aboutme() {
           <p>
             When I'm not glued to my screen, I love spending time in the <a href="https://en.wikipedia.org/wiki/Segarra" target="_blank" rel="noreferrer">Catalan wild-west</a>, where I'm fixing up an old house.
           </p>
+          </span>
           </div>
         </div>
       </main>

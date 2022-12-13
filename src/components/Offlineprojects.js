@@ -5,6 +5,7 @@ export default function Projects(props) {
     return (
    
       <div className="Card" key={props.idnew_table}>
+        <div className="card--contents">
         <div className="skillsList">
           <ul>
             {props.ProjectSkill1 ? <li className={props.ProjectSkill1} ><i className = {props.ProjectSkill1Icon} />{props.ProjectSkill1}</li> : null}
@@ -15,20 +16,21 @@ export default function Projects(props) {
             {props.ProjectSkill6 ? <li className={props.ProjectSkill6} ><i className = {props.ProjectSkill6Icon} />{props.ProjectSkill6}</li> : null}
           </ul>
         </div>
-        <p>
-           {props.ProjectURL? <span className="projectLink"><a href={props.ProjectURL}> <span className="project--title">{props.ProjectName}</span></a></span> :<span className="project--title">{props.ProjectName}</span> }
-          </p>
-
+        <div className="project--titleDescription">
+            <p>
+            {props.ProjectURL? <span className="projectLink"><a href={props.ProjectURL}> <span className="project--title">{props.ProjectName}</span></a></span> :<span className="project--title">{props.ProjectName}</span> }
+            </p>
             <span className="projectCat">{props.ProjectCategory}</span>
             <p className="projectDescr">{props.ProjectDescription}</p>
+          </div>
             <div className="projectFotos" align="center">
               {props.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + props.ProjectImage1} className="foto1" alt={props.ProjectName} id={props.idnew_table}   /></span> }
-              {/* {props.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + props.ProjectImage2} className="foto2" alt={props.ProjectName} id={props.idnew_table} onClick={imageClick} /></span> }        */}
+              {props.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + props.ProjectImage2} className="foto1" alt={props.ProjectName} id={props.idnew_table}  /></span> }
+            
+              {props.ProjectStatus === "Completed" ? '' : <div className="projectStatus">{props.ProjectStatus}</div>}
             </div>
-              {props.ProjectStatus === "Completed" ? '' : <p className="projectStatus">{props.ProjectStatus}</p>}
-              
       </div>
-
+      </div>
 
     )
 
