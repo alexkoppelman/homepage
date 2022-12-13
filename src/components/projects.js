@@ -1,4 +1,5 @@
 import React from "react";
+import projjson from '../proj.json' 
 
 
 export default function Projects() {
@@ -9,13 +10,15 @@ export default function Projects() {
 
 
 // handle project data coming in
-const restEndpoint = "https://alexkoppelman.es:1880/proj";
+const restEndpoint = "https://alekbcn.duckdns.org:1880/proj";
 
 
 const callRestApi = async () => {
-    const response = await fetch(restEndpoint);
     
+    //enable when back home
+    const response = await fetch(restEndpoint);
     const jsonResponse = await response.json();
+    
     //console.log(jsonResponse);
     
     const arrayOfLists = jsonResponse.map(
@@ -41,17 +44,14 @@ const callRestApi = async () => {
             <p className="projectDescr">{record.ProjectDescription}</p>
             <div className="projectFotos" align="center">
               {record.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage1} className="foto1" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick}  /></span> }
-              {record.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage2} className="foto2" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick} /></span> }       
+              {/* {record.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage2} className="foto2" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick} /></span> }        */}
             </div>
               {record.ProjectStatus === "Completed" ? '' : <p className="projectStatus">{record.ProjectStatus}</p>}
               
       </div>
-
     )
-    
     return arrayOfLists;
-    
-};
+  };
 
 
 function RenderResult() {
@@ -63,37 +63,22 @@ function RenderResult() {
     },[]);
   
     return(
-        <div>
           {apiResponse}
-          
-        </div>
       );
   };
 
   const [open, setOpen] = React.useState(true);
  
-const toggle = () => {
+  const toggle = () => {
     setOpen(!open);
   };
 
   
     return (
-       
-       <div className="contentblock">
-        
-        <div className="ReferralsHeader"><button type="button" className="collapsible" onClick={toggle}><span className="headertitle">Projects & Ideas</span></button></div>
-        {open && (
-        <div className="projectstext" id="projectImageLarge">
-            <RenderResult />
-        </div>
-        )}
-           
-        </div>
-    
-       
-   )
-
-   
+    <div>
+      <RenderResult />
+    </div>            
+    )
 
    }
 
