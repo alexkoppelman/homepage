@@ -161,6 +161,14 @@ img {
     font-size: 2.4rem;
 }
 
+.header--social-icon {
+  padding:0%
+} 
+
+.header--social-icon:hover {
+  transform: scale(1.05);
+} 
+
 .mainpage {
   display: flex;
   flex-direction:row;
