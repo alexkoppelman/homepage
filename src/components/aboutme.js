@@ -16,6 +16,9 @@ export default function Aboutme() {
           </p><br/>
           <p>
             When I'm not glued to my screen, I love spending time in the <a href="https://en.wikipedia.org/wiki/Segarra" target="_blank" rel="noreferrer">Catalan wild-west</a>, where I'm fixing up an old house.
+          </p><br/>
+          <p>
+            The projects listed here are all personal projects and are not related to my day job in any manner.
           </p>
           </span>
           </div>
