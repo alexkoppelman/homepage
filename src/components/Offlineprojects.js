@@ -24,8 +24,8 @@ export default function Projects(props) {
             <p className="projectDescr">{props.ProjectDescription}</p>
           </div>
             <div className="projectFotos" align="center">
-              {props.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + props.ProjectImage1} className="foto1" alt={props.ProjectName} id={props.idnew_table}   /></span> }
-              {props.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + props.ProjectImage2} className="foto1" alt={props.ProjectName} id={props.idnew_table}  /></span> }
+              {props.ProjectImage1 == null ? '' : <span ><img src= {'images/' + props.ProjectImage1} className="foto1" alt={props.ProjectName} id={props.idnew_table}   /></span> }
+              {props.ProjectImage2 == null ? '' : <span ><img src= {'images/' + props.ProjectImage2} className="foto1" alt={props.ProjectName} id={props.idnew_table}  /></span> }
             
               {props.ProjectStatus === "Completed" ? '' : <div className="projectStatus">{props.ProjectStatus}</div>}
             </div>
