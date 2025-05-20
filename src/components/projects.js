@@ -43,7 +43,7 @@ const callRestApi = async () => {
             <span className="projectCat">{record.ProjectCategory}</span>
             <p className="projectDescr">{record.ProjectDescription}</p>
             <div className="projectFotos" align="center">
-              {record.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage1} className="foto1" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick}  /></span> }
+              {record.ProjectImage1 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage1} loading="lazy" className="foto1" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick}  /></span> }
               {/* {record.ProjectImage2 == null ? '' : <span ><img src= {'/images/' + record.ProjectImage2} className="foto2" alt={record.ProjectName} id={record.idnew_table} onClick={imageClick} /></span> }        */}
             </div>
               {record.ProjectStatus === "Completed" ? '' : <p className="projectStatus">{record.ProjectStatus}</p>}

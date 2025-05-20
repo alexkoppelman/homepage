@@ -25,6 +25,24 @@ color: #16425B;
 color: #81C3D7;
 }
 
+
+
+/* .aboutme   {
+ text-align: center;
+ padding: 2rem;
+ font-size: 1.2rem;
+ color: #555;
+} */
+
+
+.spinner {
+ text-align: center;
+ padding: 2rem;
+ font-size: 1.2rem;
+ color: #555;
+}
+
+
 /* Structure */
 
 *,
