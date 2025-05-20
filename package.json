@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://alexkoppelman.github.io/homepage",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
