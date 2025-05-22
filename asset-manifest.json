@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/alexkoppelman.github.io/homepage/static/css/main.82a99c20.css",
-    "main.js": "/alexkoppelman.github.io/homepage/static/js/main.dc5d296a.js",
-    "index.html": "/alexkoppelman.github.io/homepage/index.html",
-    "main.82a99c20.css.map": "/alexkoppelman.github.io/homepage/static/css/main.82a99c20.css.map",
-    "main.dc5d296a.js.map": "/alexkoppelman.github.io/homepage/static/js/main.dc5d296a.js.map"
+    "main.css": "/alexkoppelman.github.io/static/css/main.82a99c20.css",
+    "main.js": "/alexkoppelman.github.io/static/js/main.dc5d296a.js",
+    "index.html": "/alexkoppelman.github.io/index.html",
+    "main.82a99c20.css.map": "/alexkoppelman.github.io/static/css/main.82a99c20.css.map",
+    "main.dc5d296a.js.map": "/alexkoppelman.github.io/static/js/main.dc5d296a.js.map"
   },
   "entrypoints": [
     "static/css/main.82a99c20.css",
